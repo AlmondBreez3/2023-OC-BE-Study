@@ -92,7 +92,6 @@ Hello
         model.addAttribute("data", "hi!!");
         //resources/templates 폴더안에서 return값 여기서는 'hello'를 찾아 파일 실행을 함 여기선 hello.html을 찾아 렌더링한다
         return "hello";
-
     }
 
 컨트롤러에서 리턴값으로 문자를 반환하면 뷰 리졸버('viewResolver')가 화면을 찾아서 처리한다

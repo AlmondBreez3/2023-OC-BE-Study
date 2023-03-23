@@ -19,7 +19,7 @@ API:Application 소프트웨어를 구축하고 통합하기 위한 프로토콜
 ##API 사용해보기
 
 https://cloud.google.com/appengine/docs/admin-api/trying-the-api?hl=ko
-를 들어가서 Admin API 사용해 보기를 해보았습니다
+를 들어가서 Admin API 사용해 보기를 해보았다.
 
 ##인증 토큰을 요청하고 response까지 받는 부분:
 Request:

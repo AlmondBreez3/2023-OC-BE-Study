@@ -2,6 +2,7 @@ Week1 백엔드 스터디
 
 ----1주차 과제----
 #1.MVC란?
+
 Model, View,Controller를 나타내는 약자로 SW 아키텍처 디자인 패턴 중 하나이다. 디버깅이나 코드의 가독성을 높이고, 기능 단위별로 나누어서 처리를 한다. 
 Model은 데이터베이스와 소통하고 컨트롤러에게 데이터를 전달한다.
 View는 유저가 보는 화면을 보여주게 하는 역할이다. 컨트롤러와만 소통한다
@@ -12,6 +13,7 @@ API:Application 소프트웨어를 구축하고 통합하기 위한 프로토콜
 서버:넓은 의미로는 클라이언트에게 여러가지 서비스를 제공하는 것으로 볼 수 있다.
 
 #API 사용해보기
+
 https://cloud.google.com/appengine/docs/admin-api/trying-the-api?hl=ko
 를 들어가서 Admin API 사용해 보기를 해보았습니다
 
@@ -44,6 +46,7 @@ Content-type: application/json; charset=utf-8
 서버에서 mail을 보낼 수 있도록 도와주는 google oauth를 활성화 해볼 수 있는 방법을 공부해보았다.
 
 #3.RESTful이란?
+
 먼저 REST란 HTTP URI를 통해 자원을 명시하고 Method(GET,POST,PUT,DELETE,PATCH등)을 통해 URI에 대한 CRUD Operation을 적용하는 것을 의미한다.
 특징
 -Uniform

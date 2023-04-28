@@ -1,19 +1,25 @@
 Week1 백엔드 스터디
 
 ----1주차 과제----
+
 #1.MVC란?
+
 Model, View,Controller를 나타내는 약자로 SW 아키텍처 디자인 패턴 중 하나이다. 디버깅이나 코드의 가독성을 높이고, 기능 단위별로 나누어서 처리를 한다. 
 Model은 데이터베이스와 소통하고 컨트롤러에게 데이터를 전달한다.
 View는 유저가 보는 화면을 보여주게 하는 역할이다. 컨트롤러와만 소통한다
 Controller
 View에서 이벤트 값을 받아 Model에게 데이터를 넘겨준다. 이 과정에서 Model에게 전달할 데이터를 이름 그대로 control할 수 있다
+
+
 #2.API와 서버란?
+
 API:Application 소프트웨어를 구축하고 통합하기 위한 프로토콜이다. 정보 제공자와 정보 사용자간의 계약으로 볼 수 있다. 예를 들어 날씨 서비스용 API설계에서 사용자는 우편번호를 제공하고 생산자는(최고 기온,최저 기온)으로 구성된 응답으로 답하도록 지정하며 상호작용하는 것을 생각하변 된다.
 서버:넓은 의미로는 클라이언트에게 여러가지 서비스를 제공하는 것으로 볼 수 있다.
 
-#API 사용해보기
+##API 사용해보기
+
 https://cloud.google.com/appengine/docs/admin-api/trying-the-api?hl=ko
-를 들어가서 Admin API 사용해 보기를 해보았습니다
+를 들어가서 Admin API 사용해 보기를 해보았다.
 
 ##인증 토큰을 요청하고 response까지 받는 부분:
 Request:
@@ -44,6 +50,7 @@ Content-type: application/json; charset=utf-8
 서버에서 mail을 보낼 수 있도록 도와주는 google oauth를 활성화 해볼 수 있는 방법을 공부해보았다.
 
 #3.RESTful이란?
+
 먼저 REST란 HTTP URI를 통해 자원을 명시하고 Method(GET,POST,PUT,DELETE,PATCH등)을 통해 URI에 대한 CRUD Operation을 적용하는 것을 의미한다.
 특징
 -Uniform
@@ -92,7 +99,6 @@ Hello
         model.addAttribute("data", "hi!!");
         //resources/templates 폴더안에서 return값 여기서는 'hello'를 찾아 파일 실행을 함 여기선 hello.html을 찾아 렌더링한다
         return "hello";
-
     }
 
 컨트롤러에서 리턴값으로 문자를 반환하면 뷰 리졸버('viewResolver')가 화면을 찾아서 처리한다
